@@ -1,0 +1,46 @@
+# Byte-compiled / optimized / compiled files
+__pycache__/
+*.pyc
+*.pyd
+*.pyo
+
+# Virtual environment
+venv/
+.venv/
+env/
+.env/
+
+# Editor/IDE specific files
+.idea/  # PyCharm
+.vscode/ # VS Code
+*.sublime-project
+*.sublime-workspace
+.DS_Store # macOS specific
+
+# Jupyter Notebook files
+.ipynb_checkpoints/
+
+# PyTorch specific
+# Generated model weights/checkpoints
+*.pt
+*.pth
+*.ckpt
+# TensorBoard logs
+runs/
+logs/
+
+# Data files (if not part of the core dataset for version control)
+datasets/
+
+# Miscellaneous
+.pytest_cache/
+.coverage
+htmlcov/
+build/
+dist/
+*.egg-info/
+.mypy_cache/
+.ruff_cache/
+
+# Ignore Python virtual environment libraries
+rlvr_env/*
