@@ -6,14 +6,6 @@ An implementation of Reinforcement Learning with Verifiable Rewards for training
 
 This project implements RLVR, a technique that uses automated verifiers to provide objective rewards for language model training, improving reasoning, planning, and instruction-following capabilities. Unlike preference-based RLHF, RLVR uses deterministic verification to ensure model outputs are demonstrably correct.
 
-## Key Features
-
-- **Modular Architecture**: Easy to modify reward functions and verification strategies
-- **Production Ready**: Clean, well-documented code with proper error handling
-- **Multiple Verification Types**: Code execution, mathematical verification, logical reasoning
-- **Extensible Framework**: Support for custom verifiers and reward functions
-- **Comprehensive Logging**: Detailed training metrics and verification results
-
 ## Project Structure
 
 ```
