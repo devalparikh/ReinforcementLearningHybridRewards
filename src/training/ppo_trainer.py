@@ -14,7 +14,7 @@ from dataclasses import dataclass
 
 from ..config.training_config import TrainingConfig
 from ..models.language_model import LanguageModel
-from .rlvr_trainer import TrainingStep
+from .training_types import TrainingStep
 
 
 @dataclass
@@ -82,8 +82,18 @@ class PPOTrainer:
         if not logprobs:
             return {"policy_loss": 0.0, "value_loss": 0.0, "total_loss": 0.0}
         
-        # Convert logprobs to tensor
-        logprobs_tensor = torch.tensor(logprobs, dtype=torch.float32)
+        # Convert logprobs to tensor - handle variable lengths
+        if logprobs:
+            # Pad logprobs to same length
+            max_length = max(len(lp) for lp in logprobs)
+            padded_logprobs = []
+            for lp in logprobs:
+                if len(lp) < max_length:
+                    lp = lp + [0.0] * (max_length - len(lp))
+                padded_logprobs.append(lp)
+            logprobs_tensor = torch.tensor(padded_logprobs, dtype=torch.float32, requires_grad=True)
+        else:
+            logprobs_tensor = torch.tensor([], dtype=torch.float32, requires_grad=True)
         
         # Compute advantages (simplified)
         advantages = rewards - rewards.mean()
@@ -134,6 +144,9 @@ class PPOTrainer:
     def _compute_policy_loss(self, logprobs: torch.Tensor, advantages: torch.Tensor) -> torch.Tensor:
         """Compute PPO policy loss."""
         # Simplified policy loss computation
+        # Reshape advantages to match logprobs if needed
+        if logprobs.dim() > 1 and advantages.dim() == 1:
+            advantages = advantages.unsqueeze(1).expand_as(logprobs)
         policy_loss = -(logprobs * advantages).mean()
         return policy_loss
     

@@ -41,14 +41,14 @@ class DataPreprocessor:
             return ""
         
         # Remove extra whitespace
-        text = re.sub(r'\\s+', ' ', text.strip())
+        text = re.sub(r'\s+', ' ', text.strip())
         
         # Normalize quotes
         text = text.replace('"', '"').replace('"', '"')
         text = text.replace(''', "'").replace(''', "'")
         
         # Remove control characters
-        text = re.sub(r'[\\x00-\\x1f\\x7f-\\x9f]', '', text)
+        text = re.sub(r'[\x00-\x1f\x7f-\x9f]', '', text)
         
         return text
     

@@ -15,8 +15,6 @@ import torch
 import numpy as np
 from tqdm import tqdm
 import wandb
-from dataclasses import dataclass
-
 from ..config.training_config import TrainingConfig
 from ..models.language_model import LanguageModel
 from ..verifiers.base_verifier import BaseVerifier, VerificationOutput
@@ -25,19 +23,7 @@ from ..utils.logging import setup_logging, get_logger
 from ..utils.metrics import MetricsTracker
 from .ppo_trainer import PPOTrainer
 from .experience_buffer import ExperienceBuffer
-
-
-@dataclass
-class TrainingStep:
-    """Data structure for a single training step."""
-    
-    instruction: str
-    model_output: str
-    verification_outputs: List[VerificationOutput]
-    reward_output: RewardOutput
-    logprobs: Optional[List[float]] = None
-    value: Optional[float] = None
-    metadata: Optional[Dict[str, Any]] = None
+from .training_types import TrainingStep
 
 
 class RLVRTrainer:

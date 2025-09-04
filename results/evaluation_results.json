@@ -1,0 +1,17 @@
+{
+  "training_summary": {
+    "total_episodes": 100,
+    "best_reward": 0.08358333333333329,
+    "final_reward_mean": -0.06451916666666667,
+    "final_reward_std": 0.05079277604825583,
+    "final_verification_accuracy": 0.0,
+    "training_time": 0.29311084747314453
+  },
+  "performance_metrics": {
+    "total_episodes": 100,
+    "best_reward": 0.08358333333333329,
+    "final_reward_mean": -0.06451916666666667,
+    "final_verification_accuracy": 0.0,
+    "training_time": 0.29311084747314453
+  }
+}

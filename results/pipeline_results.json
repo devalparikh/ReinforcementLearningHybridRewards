@@ -1,0 +1,2280 @@
+{
+  "data_generation": {
+    "num_samples": 200
+  },
+  "data_quality": {
+    "total_samples": 200,
+    "task_types": {
+      "code_generation": 80,
+      "math_reasoning": 77,
+      "logic_reasoning": 43
+    },
+    "difficulties": {
+      "medium": 71,
+      "easy": 100,
+      "hard": 29
+    },
+    "instruction_lengths": [
+      61,
+      34,
+      31,
+      61,
+      61,
+      65,
+      31,
+      64,
+      56,
+      45,
+      52,
+      63,
+      54,
+      45,
+      63,
+      56,
+      36,
+      34,
+      64,
+      99,
+      155,
+      63,
+      63,
+      52,
+      98,
+      26,
+      33,
+      45,
+      53,
+      39,
+      45,
+      74,
+      38,
+      44,
+      62,
+      56,
+      52,
+      54,
+      36,
+      64,
+      74,
+      63,
+      45,
+      45,
+      56,
+      33,
+      26,
+      65,
+      72,
+      91,
+      45,
+      63,
+      73,
+      83,
+      62,
+      52,
+      62,
+      64,
+      64,
+      44,
+      99,
+      65,
+      72,
+      54,
+      44,
+      63,
+      72,
+      63,
+      61,
+      39,
+      44,
+      45,
+      38,
+      34,
+      63,
+      56,
+      33,
+      73,
+      74,
+      38,
+      44,
+      44,
+      144,
+      109,
+      44,
+      91,
+      56,
+      52,
+      63,
+      83,
+      56,
+      44,
+      43,
+      91,
+      45,
+      52,
+      26,
+      63,
+      99,
+      49,
+      54,
+      74,
+      109,
+      61,
+      91,
+      63,
+      33,
+      38,
+      53,
+      56,
+      63,
+      63,
+      36,
+      31,
+      72,
+      54,
+      34,
+      56,
+      39,
+      144,
+      38,
+      53,
+      64,
+      99,
+      83,
+      99,
+      63,
+      33,
+      65,
+      63,
+      38,
+      64,
+      99,
+      44,
+      62,
+      65,
+      36,
+      155,
+      99,
+      39,
+      33,
+      49,
+      145,
+      44,
+      38,
+      45,
+      49,
+      72,
+      64,
+      45,
+      44,
+      44,
+      61,
+      65,
+      34,
+      54,
+      144,
+      44,
+      43,
+      43,
+      63,
+      74,
+      33,
+      74,
+      63,
+      109,
+      74,
+      54,
+      74,
+      45,
+      44,
+      45,
+      73,
+      64,
+      34,
+      64,
+      45,
+      65,
+      54,
+      54,
+      109,
+      26,
+      49,
+      45,
+      38,
+      145,
+      72,
+      54,
+      109,
+      74,
+      63,
+      109,
+      56,
+      36,
+      44,
+      145,
+      62,
+      91,
+      52,
+      49
+    ],
+    "output_lengths": [
+      45,
+      28,
+      9,
+      45,
+      45,
+      85,
+      9,
+      74,
+      79,
+      33,
+      33,
+      79,
+      293,
+      30,
+      79,
+      79,
+      293,
+      28,
+      74,
+      120,
+      105,
+      33,
+      79,
+      33,
+      120,
+      28,
+      28,
+      30,
+      33,
+      9,
+      30,
+      79,
+      9,
+      28,
+      45,
+      74,
+      33,
+      45,
+      293,
+      79,
+      74,
+      79,
+      30,
+      30,
+      79,
+      28,
+      28,
+      85,
+      85,
+      120,
+      30,
+      33,
+      85,
+      85,
+      45,
+      30,
+      45,
+      74,
+      74,
+      28,
+      120,
+      85,
+      45,
+      45,
+      293,
+      33,
+      45,
+      74,
+      45,
+      9,
+      293,
+      30,
+      9,
+      28,
+      33,
+      79,
+      28,
+      85,
+      79,
+      9,
+      293,
+      28,
+      105,
+      120,
+      293,
+      120,
+      79,
+      30,
+      79,
+      85,
+      74,
+      28,
+      293,
+      120,
+      30,
+      30,
+      28,
+      79,
+      120,
+      9,
+      45,
+      79,
+      120,
+      45,
+      120,
+      33,
+      28,
+      9,
+      33,
+      74,
+      79,
+      74,
+      293,
+      9,
+      85,
+      45,
+      28,
+      79,
+      9,
+      105,
+      9,
+      30,
+      79,
+      120,
+      85,
+      120,
+      74,
+      28,
+      85,
+      30,
+      9,
+      79,
+      120,
+      293,
+      45,
+      85,
+      293,
+      105,
+      120,
+      9,
+      28,
+      9,
+      105,
+      28,
+      9,
+      33,
+      9,
+      85,
+      74,
+      33,
+      28,
+      293,
+      45,
+      85,
+      28,
+      293,
+      105,
+      28,
+      293,
+      293,
+      74,
+      74,
+      28,
+      79,
+      30,
+      120,
+      79,
+      293,
+      74,
+      33,
+      293,
+      33,
+      85,
+      74,
+      28,
+      79,
+      33,
+      85,
+      293,
+      45,
+      120,
+      28,
+      9,
+      30,
+      9,
+      105,
+      45,
+      293,
+      120,
+      79,
+      33,
+      120,
+      74,
+      293,
+      293,
+      105,
+      45,
+      120,
+      30,
+      9
+    ],
+    "quality_score": 0.626645,
+    "avg_instruction_length": 61.075,
+    "avg_output_length": 82.28,
+    "task_type_diversity": 3,
+    "difficulty_diversity": 3
+  },
+  "verification_testing": {
+    "CodeVerifier": {
+      "success_rate": 0.0,
+      "avg_score": 0.38499999999999995,
+      "results": [
+        {
+          "success": false,
+          "score": 0.7,
+          "details": {
+            "execution_output": "",
+            "execution_error": null,
+            "verification_details": {
+              "partial_match": true
+            },
+            "code": "def is_palindrome(s):\n    return s == s[::-1]",
+            "execution_time": 0.0002810955047607422
+          }
+        },
+        {
+          "success": false,
+          "score": 0.0,
+          "details": {
+            "error": "No code found in model output"
+          }
+        },
+        {
+          "success": false,
+          "score": 0.0,
+          "details": {
+            "error": "No code found in model output"
+          }
+        },
+        {
+          "success": false,
+          "score": 0.7,
+          "details": {
+            "execution_output": "",
+            "execution_error": null,
+            "verification_details": {
+              "partial_match": true
+            },
+            "code": "def is_palindrome(s):\n    return s == s[::-1]",
+            "execution_time": 5.602836608886719e-05
+          }
+        },
+        {
+          "success": false,
+          "score": 0.7,
+          "details": {
+            "execution_output": "",
+            "execution_error": null,
+            "verification_details": {
+              "partial_match": true
+            },
+            "code": "def is_palindrome(s):\n    return s == s[::-1]",
+            "execution_time": 4.673004150390625e-05
+          }
+        },
+        {
+          "success": false,
+          "score": 0.0,
+          "details": {
+            "error": "No code found in model output"
+          }
+        },
+        {
+          "success": false,
+          "score": 0.0,
+          "details": {
+            "error": "No code found in model output"
+          }
+        },
+        {
+          "success": false,
+          "score": 0.7,
+          "details": {
+            "execution_output": "",
+            "execution_error": null,
+            "verification_details": {
+              "partial_match": true
+            },
+            "code": "def find_max(lst):\n    if not lst:\n        return None\n    return max(lst)",
+            "execution_time": 6.103515625e-05
+          }
+        },
+        {
+          "success": false,
+          "score": 0.7,
+          "details": {
+            "execution_output": "",
+            "execution_error": null,
+            "verification_details": {
+              "partial_match": true
+            },
+            "code": "def factorial(n):\n    if n <= 1:\n        return 1\n    return n * factorial(n-1)",
+            "execution_time": 6.198883056640625e-05
+          }
+        },
+        {
+          "success": false,
+          "score": 0.0,
+          "details": {
+            "error": "No code found in model output"
+          }
+        },
+        {
+          "success": false,
+          "score": 0.0,
+          "details": {
+            "error": "No code found in model output"
+          }
+        },
+        {
+          "success": false,
+          "score": 0.7,
+          "details": {
+            "execution_output": "",
+            "execution_error": null,
+            "verification_details": {
+              "partial_match": true
+            },
+            "code": "def factorial(n):\n    if n <= 1:\n        return 1\n    return n * factorial(n-1)",
+            "execution_time": 5.412101745605469e-05
+          }
+        },
+        {
+          "success": false,
+          "score": 0.7,
+          "details": {
+            "execution_output": "",
+            "execution_error": null,
+            "verification_details": {
+              "partial_match": true
+            },
+            "code": "def binary_search(arr, target):\n    left, right = 0, len(arr) - 1\n    while left <= right:\n        mid = (left + right) // 2\n        if arr[mid] == target:\n            return mid\n        elif arr[mid] < target:\n            left = mid + 1\n        else:\n            right = mid - 1\n    return -1",
+            "execution_time": 0.00016117095947265625
+          }
+        },
+        {
+          "success": false,
+          "score": 0.0,
+          "details": {
+            "error": "No code found in model output"
+          }
+        },
+        {
+          "success": false,
+          "score": 0.7,
+          "details": {
+            "execution_output": "",
+            "execution_error": null,
+            "verification_details": {
+              "partial_match": true
+            },
+            "code": "def factorial(n):\n    if n <= 1:\n        return 1\n    return n * factorial(n-1)",
+            "execution_time": 5.2928924560546875e-05
+          }
+        },
+        {
+          "success": false,
+          "score": 0.7,
+          "details": {
+            "execution_output": "",
+            "execution_error": null,
+            "verification_details": {
+              "partial_match": true
+            },
+            "code": "def factorial(n):\n    if n <= 1:\n        return 1\n    return n * factorial(n-1)",
+            "execution_time": 4.887580871582031e-05
+          }
+        },
+        {
+          "success": false,
+          "score": 0.7,
+          "details": {
+            "execution_output": "",
+            "execution_error": null,
+            "verification_details": {
+              "partial_match": true
+            },
+            "code": "def binary_search(arr, target):\n    left, right = 0, len(arr) - 1\n    while left <= right:\n        mid = (left + right) // 2\n        if arr[mid] == target:\n            return mid\n        elif arr[mid] < target:\n            left = mid + 1\n        else:\n            right = mid - 1\n    return -1",
+            "execution_time": 0.0001347064971923828
+          }
+        },
+        {
+          "success": false,
+          "score": 0.0,
+          "details": {
+            "error": "No code found in model output"
+          }
+        },
+        {
+          "success": false,
+          "score": 0.7,
+          "details": {
+            "execution_output": "",
+            "execution_error": null,
+            "verification_details": {
+              "partial_match": true
+            },
+            "code": "def find_max(lst):\n    if not lst:\n        return None\n    return max(lst)",
+            "execution_time": 4.601478576660156e-05
+          }
+        },
+        {
+          "success": false,
+          "score": 0.0,
+          "details": {
+            "error": "No code found in model output"
+          }
+        }
+      ]
+    },
+    "MathVerifier": {
+      "success_rate": 0.0,
+      "avg_score": 0.027999999999999997,
+      "results": [
+        {
+          "success": false,
+          "score": 0.0,
+          "details": {
+            "math_content": {
+              "final_answer": null,
+              "steps": [],
+              "expressions": [
+                "def",
+                "is_palindrome",
+                "s",
+                "(",
+                ")",
+                "-1",
+                "return",
+                "s",
+                "s",
+                "=",
+                "=",
+                "-"
+              ],
+              "equations": [],
+              "variables": "{'return', 'is_palindrome', 'def'}"
+            },
+            "problem_info": {
+              "type": "unknown",
+              "variables": "{'function', 'is', 'string', 'to', 'write', 'palindrome', 'check', 'Please'}",
+              "equations": [],
+              "constraints": [],
+              "expected_format": "numeric"
+            },
+            "verification_details": {
+              "expected_comparison": {
+                "score": 0.0,
+                "match": false,
+                "details": "No actual answer provided"
+              }
+            },
+            "execution_time": 0.0009288787841796875
+          }
+        },
+        {
+          "success": false,
+          "score": 0.27999999999999997,
+          "details": {
+            "math_content": {
+              "final_answer": null,
+              "steps": [
+                "% of 200 = 0.15 \u00d7 200 = 30"
+              ],
+              "expressions": [
+                "15",
+                "200",
+                "0.15",
+                "200",
+                "30",
+                "of",
+                "=",
+                "="
+              ],
+              "equations": [
+                "15% of 200 = 0.15 \u00d7 200"
+              ],
+              "variables": "{'of'}"
+            },
+            "problem_info": {
+              "type": "equation_solving",
+              "variables": "{'you', 'is', 'solve', 'of', 'Can', 'what'}",
+              "equations": [],
+              "constraints": [],
+              "expected_format": "numeric"
+            },
+            "verification_details": {
+              "step_verification": 0.7,
+              "expected_comparison": {
+                "score": 0.0,
+                "match": false,
+                "details": "No actual answer provided"
+              }
+            },
+            "execution_time": 7.104873657226562e-05
+          }
+        },
+        {
+          "success": false,
+          "score": 0.0,
+          "details": {
+            "math_content": {
+              "final_answer": null,
+              "steps": [],
+              "expressions": [
+                "144",
+                "12",
+                "="
+              ],
+              "equations": [
+                "\u221a144 = 12"
+              ],
+              "variables": "set()"
+            },
+            "problem_info": {
+              "type": "unknown",
+              "variables": "{'is', 'square', 'of', 'What', 'root'}",
+              "equations": [],
+              "constraints": [],
+              "expected_format": "numeric"
+            },
+            "verification_details": {
+              "expected_comparison": {
+                "score": 0.0,
+                "match": false,
+                "details": "No actual answer provided"
+              }
+            },
+            "execution_time": 2.8133392333984375e-05
+          }
+        },
+        {
+          "success": false,
+          "score": 0.0,
+          "details": {
+            "math_content": {
+              "final_answer": null,
+              "steps": [],
+              "expressions": [
+                "def",
+                "is_palindrome",
+                "s",
+                "(",
+                ")",
+                "-1",
+                "return",
+                "s",
+                "s",
+                "=",
+                "=",
+                "-"
+              ],
+              "equations": [],
+              "variables": "{'return', 'is_palindrome', 'def'}"
+            },
+            "problem_info": {
+              "type": "unknown",
+              "variables": "{'function', 'is', 'string', 'to', 'write', 'palindrome', 'check', 'Please'}",
+              "equations": [],
+              "constraints": [],
+              "expected_format": "numeric"
+            },
+            "verification_details": {
+              "expected_comparison": {
+                "score": 0.0,
+                "match": false,
+                "details": "No actual answer provided"
+              }
+            },
+            "execution_time": 6.318092346191406e-05
+          }
+        },
+        {
+          "success": false,
+          "score": 0.0,
+          "details": {
+            "math_content": {
+              "final_answer": null,
+              "steps": [],
+              "expressions": [
+                "def",
+                "is_palindrome",
+                "s",
+                "(",
+                ")",
+                "-1",
+                "return",
+                "s",
+                "s",
+                "=",
+                "=",
+                "-"
+              ],
+              "equations": [],
+              "variables": "{'return', 'is_palindrome', 'def'}"
+            },
+            "problem_info": {
+              "type": "unknown",
+              "variables": "{'function', 'is', 'string', 'to', 'write', 'palindrome', 'check', 'Please'}",
+              "equations": [],
+              "constraints": [],
+              "expected_format": "numeric"
+            },
+            "verification_details": {
+              "expected_comparison": {
+                "score": 0.0,
+                "match": false,
+                "details": "No actual answer provided"
+              }
+            },
+            "execution_time": 6.008148193359375e-05
+          }
+        },
+        {
+          "success": false,
+          "score": 0.0,
+          "details": {
+            "math_content": {
+              "final_answer": null,
+              "steps": [],
+              "expressions": [
+                "Yes",
+                "this",
+                "is",
+                "a",
+                "valid",
+                "syllogism",
+                "If",
+                "all",
+                "A",
+                "are",
+                "B",
+                "and",
+                "all",
+                "B",
+                "are",
+                "C",
+                "then",
+                "all",
+                "A",
+                "must",
+                "be",
+                "C",
+                "log"
+              ],
+              "equations": [],
+              "variables": "{'is', 'Yes', 'this', 'be', 'valid', 'must', 'syllogism', 'all', 'are'}"
+            },
+            "problem_info": {
+              "type": "unknown",
+              "variables": "{'we', 'that', 'can', 'conclude', 'all', 'are'}",
+              "equations": [],
+              "constraints": [],
+              "expected_format": "numeric"
+            },
+            "verification_details": {
+              "expected_comparison": {
+                "score": 0.0,
+                "match": false,
+                "details": "No actual answer provided"
+              }
+            },
+            "execution_time": 0.00015282630920410156
+          }
+        },
+        {
+          "success": false,
+          "score": 0.0,
+          "details": {
+            "math_content": {
+              "final_answer": null,
+              "steps": [],
+              "expressions": [
+                "144",
+                "12",
+                "="
+              ],
+              "equations": [
+                "\u221a144 = 12"
+              ],
+              "variables": "set()"
+            },
+            "problem_info": {
+              "type": "unknown",
+              "variables": "{'is', 'square', 'of', 'What', 'root'}",
+              "equations": [],
+              "constraints": [],
+              "expected_format": "numeric"
+            },
+            "verification_details": {
+              "expected_comparison": {
+                "score": 0.0,
+                "match": false,
+                "details": "No actual answer provided"
+              }
+            },
+            "execution_time": 2.3126602172851562e-05
+          }
+        },
+        {
+          "success": false,
+          "score": 0.0,
+          "details": {
+            "math_content": {
+              "final_answer": null,
+              "steps": [],
+              "expressions": [
+                "def",
+                "find_max",
+                "lst",
+                "(",
+                ")",
+                "if",
+                "not",
+                "lst",
+                "return",
+                "None",
+                "return",
+                "max",
+                "lst",
+                "(",
+                ")"
+              ],
+              "equations": [],
+              "variables": "{'def', 'None', 'return', 'not', 'lst', 'find_max'}"
+            },
+            "problem_info": {
+              "type": "unknown",
+              "variables": "{'you', 'function', 'maximum', 'in', 'element', 'Can', 'create', 'to', 'list', 'find'}",
+              "equations": [],
+              "constraints": [],
+              "expected_format": "numeric"
+            },
+            "verification_details": {
+              "expected_comparison": {
+                "score": 0.0,
+                "match": false,
+                "details": "No actual answer provided"
+              }
+            },
+            "execution_time": 7.605552673339844e-05
+          }
+        },
+        {
+          "success": false,
+          "score": 0.0,
+          "details": {
+            "math_content": {
+              "final_answer": null,
+              "steps": [],
+              "expressions": [
+                "def",
+                "factorial",
+                "n",
+                "(",
+                ")",
+                "1",
+                "if",
+                "n",
+                "<",
+                "=",
+                "1",
+                "return",
+                "-1",
+                "return",
+                "n",
+                "factorial",
+                "n",
+                "*",
+                "(",
+                "-",
+                ")"
+              ],
+              "equations": [
+                "if n < = 1:"
+              ],
+              "variables": "{'factorial', 'def', 'return'}"
+            },
+            "problem_info": {
+              "type": "computation",
+              "variables": "{'function', 'factorial', 'Write', 'calculate', 'of', 'to', 'number'}",
+              "equations": [],
+              "constraints": [],
+              "expected_format": "numeric"
+            },
+            "verification_details": {
+              "expected_comparison": {
+                "score": 0.0,
+                "match": false,
+                "details": "No actual answer provided"
+              }
+            },
+            "execution_time": 6.67572021484375e-05
+          }
+        },
+        {
+          "success": false,
+          "score": 0.0,
+          "details": {
+            "math_content": {
+              "final_answer": null,
+              "steps": [],
+              "expressions": [
+                "5",
+                "25",
+                "78.54",
+                "Area",
+                "r",
+                "=",
+                "=",
+                "="
+              ],
+              "equations": [
+                "Area = \u03c0r\u00b2",
+                "\u03c0 \u00d7 5\u00b2 = 25\u03c0 \u2248 78.54"
+              ],
+              "variables": "{'Area'}"
+            },
+            "problem_info": {
+              "type": "computation",
+              "variables": "{'circle', 'Calculate', 'of', 'with', 'radius', 'area'}",
+              "equations": [],
+              "constraints": [],
+              "expected_format": "numeric"
+            },
+            "verification_details": {
+              "expected_comparison": {
+                "score": 0.0,
+                "match": false,
+                "details": "No actual answer provided"
+              }
+            },
+            "execution_time": 3.695487976074219e-05
+          }
+        },
+        {
+          "success": false,
+          "score": 0.0,
+          "details": {
+            "math_content": {
+              "final_answer": null,
+              "steps": [],
+              "expressions": [
+                "5",
+                "25",
+                "78.54",
+                "Area",
+                "r",
+                "=",
+                "=",
+                "="
+              ],
+              "equations": [
+                "Area = \u03c0r\u00b2",
+                "\u03c0 \u00d7 5\u00b2 = 25\u03c0 \u2248 78.54"
+              ],
+              "variables": "{'Area'}"
+            },
+            "problem_info": {
+              "type": "computation",
+              "variables": "{'circle', 'of', 'calculate', 'with', 'Please', 'radius', 'area'}",
+              "equations": [],
+              "constraints": [],
+              "expected_format": "numeric"
+            },
+            "verification_details": {
+              "expected_comparison": {
+                "score": 0.0,
+                "match": false,
+                "details": "No actual answer provided"
+              }
+            },
+            "execution_time": 3.981590270996094e-05
+          }
+        },
+        {
+          "success": false,
+          "score": 0.0,
+          "details": {
+            "math_content": {
+              "final_answer": null,
+              "steps": [],
+              "expressions": [
+                "def",
+                "factorial",
+                "n",
+                "(",
+                ")",
+                "1",
+                "if",
+                "n",
+                "<",
+                "=",
+                "1",
+                "return",
+                "-1",
+                "return",
+                "n",
+                "factorial",
+                "n",
+                "*",
+                "(",
+                "-",
+                ")"
+              ],
+              "equations": [
+                "if n < = 1:"
+              ],
+              "variables": "{'factorial', 'def', 'return'}"
+            },
+            "problem_info": {
+              "type": "computation",
+              "variables": "{'function', 'factorial', 'of', 'calculate', 'to', 'write', 'number', 'Please'}",
+              "equations": [],
+              "constraints": [],
+              "expected_format": "numeric"
+            },
+            "verification_details": {
+              "expected_comparison": {
+                "score": 0.0,
+                "match": false,
+                "details": "No actual answer provided"
+              }
+            },
+            "execution_time": 7.176399230957031e-05
+          }
+        },
+        {
+          "success": false,
+          "score": 0.0,
+          "details": {
+            "math_content": {
+              "final_answer": null,
+              "steps": [],
+              "expressions": [
+                "def",
+                "binary_search",
+                "arr",
+                "target",
+                "(",
+                ")",
+                "0",
+                "1",
+                "left",
+                "right",
+                "len",
+                "arr",
+                "=",
+                "(",
+                ")",
+                "-",
+                "while",
+                "left",
+                "right",
+                "<",
+                "=",
+                "2",
+                "mid",
+                "left",
+                "right",
+                "=",
+                "(",
+                "+",
+                ")",
+                "/",
+                "/",
+                "if",
+                "arr",
+                "mid",
+                "target",
+                "=",
+                "=",
+                "return",
+                "mid",
+                "elif",
+                "arr",
+                "mid",
+                "target",
+                "<",
+                "1",
+                "left",
+                "mid",
+                "=",
+                "+",
+                "else",
+                "1",
+                "right",
+                "mid",
+                "=",
+                "-",
+                "-1",
+                "return",
+                "-"
+              ],
+              "equations": [
+                "left, right = 0, len(arr) - 1",
+                "while left < = right:",
+                "mid = (left + right) // 2",
+                "left = mid + 1",
+                "right = mid - 1"
+              ],
+              "variables": "{'elif', 'def', 'left', 'mid', 'arr', 'binary_search', 'target', 'right', 'len', 'return'}"
+            },
+            "problem_info": {
+              "type": "unknown",
+              "variables": "{'algorithm', 'binary', 'help', 'Implement', 'with', 'need', 'search'}",
+              "equations": [],
+              "constraints": [],
+              "expected_format": "numeric"
+            },
+            "verification_details": {
+              "expected_comparison": {
+                "score": 0.0,
+                "match": false,
+                "details": "No actual answer provided"
+              }
+            },
+            "execution_time": 0.00012087821960449219
+          }
+        },
+        {
+          "success": false,
+          "score": 0.0,
+          "details": {
+            "math_content": {
+              "final_answer": null,
+              "steps": [],
+              "expressions": [
+                "+1",
+                "2",
+                "10",
+                "11",
+                "2",
+                "55",
+                "Sum",
+                "n",
+                "n",
+                "=",
+                "(",
+                "+",
+                ")",
+                "/",
+                "=",
+                "(",
+                ")",
+                "/",
+                "="
+              ],
+              "equations": [
+                "Sum = n(n+1)/2",
+                "10(11)/2 = 55"
+              ],
+              "variables": "set()"
+            },
+            "problem_info": {
+              "type": "unknown",
+              "variables": "{'numbers', 'of', 'natural', 'first', 'Find'}",
+              "equations": [],
+              "constraints": [],
+              "expected_format": "numeric"
+            },
+            "verification_details": {
+              "expected_comparison": {
+                "score": 0.0,
+                "match": false,
+                "details": "No actual answer provided"
+              }
+            },
+            "execution_time": 3.600120544433594e-05
+          }
+        },
+        {
+          "success": false,
+          "score": 0.0,
+          "details": {
+            "math_content": {
+              "final_answer": null,
+              "steps": [],
+              "expressions": [
+                "def",
+                "factorial",
+                "n",
+                "(",
+                ")",
+                "1",
+                "if",
+                "n",
+                "<",
+                "=",
+                "1",
+                "return",
+                "-1",
+                "return",
+                "n",
+                "factorial",
+                "n",
+                "*",
+                "(",
+                "-",
+                ")"
+              ],
+              "equations": [
+                "if n < = 1:"
+              ],
+              "variables": "{'factorial', 'def', 'return'}"
+            },
+            "problem_info": {
+              "type": "computation",
+              "variables": "{'function', 'factorial', 'of', 'calculate', 'to', 'write', 'number', 'Please'}",
+              "equations": [],
+              "constraints": [],
+              "expected_format": "numeric"
+            },
+            "verification_details": {
+              "expected_comparison": {
+                "score": 0.0,
+                "match": false,
+                "details": "No actual answer provided"
+              }
+            },
+            "execution_time": 7.081031799316406e-05
+          }
+        },
+        {
+          "success": false,
+          "score": 0.0,
+          "details": {
+            "math_content": {
+              "final_answer": null,
+              "steps": [],
+              "expressions": [
+                "def",
+                "factorial",
+                "n",
+                "(",
+                ")",
+                "1",
+                "if",
+                "n",
+                "<",
+                "=",
+                "1",
+                "return",
+                "-1",
+                "return",
+                "n",
+                "factorial",
+                "n",
+                "*",
+                "(",
+                "-",
+                ")"
+              ],
+              "equations": [
+                "if n < = 1:"
+              ],
+              "variables": "{'factorial', 'def', 'return'}"
+            },
+            "problem_info": {
+              "type": "computation",
+              "variables": "{'function', 'factorial', 'Write', 'calculate', 'of', 'to', 'number'}",
+              "equations": [],
+              "constraints": [],
+              "expected_format": "numeric"
+            },
+            "verification_details": {
+              "expected_comparison": {
+                "score": 0.0,
+                "match": false,
+                "details": "No actual answer provided"
+              }
+            },
+            "execution_time": 6.389617919921875e-05
+          }
+        },
+        {
+          "success": false,
+          "score": 0.0,
+          "details": {
+            "math_content": {
+              "final_answer": null,
+              "steps": [],
+              "expressions": [
+                "def",
+                "binary_search",
+                "arr",
+                "target",
+                "(",
+                ")",
+                "0",
+                "1",
+                "left",
+                "right",
+                "len",
+                "arr",
+                "=",
+                "(",
+                ")",
+                "-",
+                "while",
+                "left",
+                "right",
+                "<",
+                "=",
+                "2",
+                "mid",
+                "left",
+                "right",
+                "=",
+                "(",
+                "+",
+                ")",
+                "/",
+                "/",
+                "if",
+                "arr",
+                "mid",
+                "target",
+                "=",
+                "=",
+                "return",
+                "mid",
+                "elif",
+                "arr",
+                "mid",
+                "target",
+                "<",
+                "1",
+                "left",
+                "mid",
+                "=",
+                "+",
+                "else",
+                "1",
+                "right",
+                "mid",
+                "=",
+                "-",
+                "-1",
+                "return",
+                "-"
+              ],
+              "equations": [
+                "left, right = 0, len(arr) - 1",
+                "while left < = right:",
+                "mid = (left + right) // 2",
+                "left = mid + 1",
+                "right = mid - 1"
+              ],
+              "variables": "{'elif', 'def', 'left', 'mid', 'arr', 'binary_search', 'target', 'right', 'len', 'return'}"
+            },
+            "problem_info": {
+              "type": "unknown",
+              "variables": "{'search', 'algorithm', 'Implement', 'binary'}",
+              "equations": [],
+              "constraints": [],
+              "expected_format": "numeric"
+            },
+            "verification_details": {
+              "expected_comparison": {
+                "score": 0.0,
+                "match": false,
+                "details": "No actual answer provided"
+              }
+            },
+            "execution_time": 0.000102996826171875
+          }
+        },
+        {
+          "success": false,
+          "score": 0.27999999999999997,
+          "details": {
+            "math_content": {
+              "final_answer": null,
+              "steps": [
+                "% of 200 = 0.15 \u00d7 200 = 30"
+              ],
+              "expressions": [
+                "15",
+                "200",
+                "0.15",
+                "200",
+                "30",
+                "of",
+                "=",
+                "="
+              ],
+              "equations": [
+                "15% of 200 = 0.15 \u00d7 200"
+              ],
+              "variables": "{'of'}"
+            },
+            "problem_info": {
+              "type": "equation_solving",
+              "variables": "{'you', 'is', 'solve', 'of', 'Can', 'what'}",
+              "equations": [],
+              "constraints": [],
+              "expected_format": "numeric"
+            },
+            "verification_details": {
+              "step_verification": 0.7,
+              "expected_comparison": {
+                "score": 0.0,
+                "match": false,
+                "details": "No actual answer provided"
+              }
+            },
+            "execution_time": 3.409385681152344e-05
+          }
+        },
+        {
+          "success": false,
+          "score": 0.0,
+          "details": {
+            "math_content": {
+              "final_answer": null,
+              "steps": [],
+              "expressions": [
+                "def",
+                "find_max",
+                "lst",
+                "(",
+                ")",
+                "if",
+                "not",
+                "lst",
+                "return",
+                "None",
+                "return",
+                "max",
+                "lst",
+                "(",
+                ")"
+              ],
+              "equations": [],
+              "variables": "{'def', 'None', 'return', 'not', 'lst', 'find_max'}"
+            },
+            "problem_info": {
+              "type": "unknown",
+              "variables": "{'you', 'function', 'maximum', 'in', 'element', 'Can', 'create', 'to', 'list', 'find'}",
+              "equations": [],
+              "constraints": [],
+              "expected_format": "numeric"
+            },
+            "verification_details": {
+              "expected_comparison": {
+                "score": 0.0,
+                "match": false,
+                "details": "No actual answer provided"
+              }
+            },
+            "execution_time": 7.581710815429688e-05
+          }
+        },
+        {
+          "success": false,
+          "score": 0.0,
+          "details": {
+            "math_content": {
+              "final_answer": null,
+              "steps": [],
+              "expressions": [
+                "No",
+                "we",
+                "cannot",
+                "conclude",
+                "that",
+                "some",
+                "roses",
+                "are",
+                "red",
+                "The",
+                "premises",
+                "don",
+                "t",
+                "establish",
+                "a",
+                "connection",
+                "between",
+                "roses",
+                "and",
+                "red",
+                "flowers"
+              ],
+              "equations": [],
+              "variables": "{'premises', 'No', 'we', 'red', 'that', 'don', 'connection', 'conclude', 'roses', 'between', 'flowers', 'cannot', 'some', 'establish', 'are'}"
+            },
+            "problem_info": {
+              "type": "unknown",
+              "variables": "{'you', 'we', 'red', 'Can', 'flowers', 'some', 'can', 'roses', 'conclude', 'that', 'all', 'are'}",
+              "equations": [],
+              "constraints": [],
+              "expected_format": "numeric"
+            },
+            "verification_details": {
+              "expected_comparison": {
+                "score": 0.0,
+                "match": false,
+                "details": "No actual answer provided"
+              }
+            },
+            "execution_time": 0.00023293495178222656
+          }
+        }
+      ]
+    },
+    "LogicVerifier": {
+      "success_rate": 0.0,
+      "avg_score": 0.31899999999999995,
+      "results": [
+        {
+          "success": false,
+          "score": 0.3,
+          "details": {
+            "logic_content": {
+              "premises": [],
+              "conclusions": [],
+              "arguments": [],
+              "logical_connectors": [],
+              "contradictions": [],
+              "fallacies": [],
+              "structure": "unstructured"
+            },
+            "problem_info": {
+              "type": "unknown",
+              "expected_structure": "unknown",
+              "constraints": [],
+              "context": {}
+            },
+            "verification_details": {
+              "structure_score": 0.0,
+              "consistency_score": 1.0,
+              "coherence_score": 0.0,
+              "fallacy_penalty": 0.0,
+              "fallacies_found": []
+            },
+            "execution_time": 0.0009109973907470703
+          }
+        },
+        {
+          "success": false,
+          "score": 0.3,
+          "details": {
+            "logic_content": {
+              "premises": [],
+              "conclusions": [],
+              "arguments": [],
+              "logical_connectors": [],
+              "contradictions": [],
+              "fallacies": [],
+              "structure": "unstructured"
+            },
+            "problem_info": {
+              "type": "unknown",
+              "expected_structure": "unknown",
+              "constraints": [],
+              "context": {}
+            },
+            "verification_details": {
+              "structure_score": 0.0,
+              "consistency_score": 1.0,
+              "coherence_score": 0.0,
+              "fallacy_penalty": 0.0,
+              "fallacies_found": []
+            },
+            "execution_time": 4.00543212890625e-05
+          }
+        },
+        {
+          "success": false,
+          "score": 0.3,
+          "details": {
+            "logic_content": {
+              "premises": [],
+              "conclusions": [],
+              "arguments": [],
+              "logical_connectors": [],
+              "contradictions": [],
+              "fallacies": [],
+              "structure": "unstructured"
+            },
+            "problem_info": {
+              "type": "unknown",
+              "expected_structure": "unknown",
+              "constraints": [],
+              "context": {}
+            },
+            "verification_details": {
+              "structure_score": 0.0,
+              "consistency_score": 1.0,
+              "coherence_score": 0.0,
+              "fallacy_penalty": 0.0,
+              "fallacies_found": []
+            },
+            "execution_time": 2.193450927734375e-05
+          }
+        },
+        {
+          "success": false,
+          "score": 0.3,
+          "details": {
+            "logic_content": {
+              "premises": [],
+              "conclusions": [],
+              "arguments": [],
+              "logical_connectors": [],
+              "contradictions": [],
+              "fallacies": [],
+              "structure": "unstructured"
+            },
+            "problem_info": {
+              "type": "unknown",
+              "expected_structure": "unknown",
+              "constraints": [],
+              "context": {}
+            },
+            "verification_details": {
+              "structure_score": 0.0,
+              "consistency_score": 1.0,
+              "coherence_score": 0.0,
+              "fallacy_penalty": 0.0,
+              "fallacies_found": []
+            },
+            "execution_time": 2.5033950805664062e-05
+          }
+        },
+        {
+          "success": false,
+          "score": 0.3,
+          "details": {
+            "logic_content": {
+              "premises": [],
+              "conclusions": [],
+              "arguments": [],
+              "logical_connectors": [],
+              "contradictions": [],
+              "fallacies": [],
+              "structure": "unstructured"
+            },
+            "problem_info": {
+              "type": "unknown",
+              "expected_structure": "unknown",
+              "constraints": [],
+              "context": {}
+            },
+            "verification_details": {
+              "structure_score": 0.0,
+              "consistency_score": 1.0,
+              "coherence_score": 0.0,
+              "fallacy_penalty": 0.0,
+              "fallacies_found": []
+            },
+            "execution_time": 2.3126602172851562e-05
+          }
+        },
+        {
+          "success": false,
+          "score": 0.5499999999999999,
+          "details": {
+            "logic_content": {
+              "premises": [
+                "If all A are B and all B are C, then all A must be C"
+              ],
+              "conclusions": [],
+              "arguments": [],
+              "logical_connectors": [
+                "if",
+                "then"
+              ],
+              "contradictions": [],
+              "fallacies": [],
+              "structure": "premise_only"
+            },
+            "problem_info": {
+              "type": "unknown",
+              "expected_structure": "unknown",
+              "constraints": [],
+              "context": {}
+            },
+            "verification_details": {
+              "structure_score": 0.5,
+              "consistency_score": 1.0,
+              "coherence_score": 0.5,
+              "fallacy_penalty": 0.0,
+              "fallacies_found": []
+            },
+            "execution_time": 4.220008850097656e-05
+          }
+        },
+        {
+          "success": false,
+          "score": 0.3,
+          "details": {
+            "logic_content": {
+              "premises": [],
+              "conclusions": [],
+              "arguments": [],
+              "logical_connectors": [],
+              "contradictions": [],
+              "fallacies": [],
+              "structure": "unstructured"
+            },
+            "problem_info": {
+              "type": "unknown",
+              "expected_structure": "unknown",
+              "constraints": [],
+              "context": {}
+            },
+            "verification_details": {
+              "structure_score": 0.0,
+              "consistency_score": 1.0,
+              "coherence_score": 0.0,
+              "fallacy_penalty": 0.0,
+              "fallacies_found": []
+            },
+            "execution_time": 2.002716064453125e-05
+          }
+        },
+        {
+          "success": false,
+          "score": 0.3,
+          "details": {
+            "logic_content": {
+              "premises": [],
+              "conclusions": [],
+              "arguments": [],
+              "logical_connectors": [
+                "if"
+              ],
+              "contradictions": [],
+              "fallacies": [],
+              "structure": "unstructured"
+            },
+            "problem_info": {
+              "type": "unknown",
+              "expected_structure": "unknown",
+              "constraints": [],
+              "context": {}
+            },
+            "verification_details": {
+              "structure_score": 0.0,
+              "consistency_score": 1.0,
+              "coherence_score": 0.0,
+              "fallacy_penalty": 0.0,
+              "fallacies_found": []
+            },
+            "execution_time": 2.7894973754882812e-05
+          }
+        },
+        {
+          "success": false,
+          "score": 0.3,
+          "details": {
+            "logic_content": {
+              "premises": [],
+              "conclusions": [],
+              "arguments": [],
+              "logical_connectors": [
+                "if"
+              ],
+              "contradictions": [],
+              "fallacies": [],
+              "structure": "unstructured"
+            },
+            "problem_info": {
+              "type": "unknown",
+              "expected_structure": "unknown",
+              "constraints": [],
+              "context": {}
+            },
+            "verification_details": {
+              "structure_score": 0.0,
+              "consistency_score": 1.0,
+              "coherence_score": 0.0,
+              "fallacy_penalty": 0.0,
+              "fallacies_found": []
+            },
+            "execution_time": 2.8133392333984375e-05
+          }
+        },
+        {
+          "success": false,
+          "score": 0.3,
+          "details": {
+            "logic_content": {
+              "premises": [],
+              "conclusions": [],
+              "arguments": [],
+              "logical_connectors": [],
+              "contradictions": [],
+              "fallacies": [],
+              "structure": "unstructured"
+            },
+            "problem_info": {
+              "type": "unknown",
+              "expected_structure": "unknown",
+              "constraints": [],
+              "context": {}
+            },
+            "verification_details": {
+              "structure_score": 0.0,
+              "consistency_score": 1.0,
+              "coherence_score": 0.0,
+              "fallacy_penalty": 0.0,
+              "fallacies_found": []
+            },
+            "execution_time": 3.814697265625e-05
+          }
+        },
+        {
+          "success": false,
+          "score": 0.3,
+          "details": {
+            "logic_content": {
+              "premises": [],
+              "conclusions": [],
+              "arguments": [],
+              "logical_connectors": [],
+              "contradictions": [],
+              "fallacies": [],
+              "structure": "unstructured"
+            },
+            "problem_info": {
+              "type": "unknown",
+              "expected_structure": "unknown",
+              "constraints": [],
+              "context": {}
+            },
+            "verification_details": {
+              "structure_score": 0.0,
+              "consistency_score": 1.0,
+              "coherence_score": 0.0,
+              "fallacy_penalty": 0.0,
+              "fallacies_found": []
+            },
+            "execution_time": 3.719329833984375e-05
+          }
+        },
+        {
+          "success": false,
+          "score": 0.3,
+          "details": {
+            "logic_content": {
+              "premises": [],
+              "conclusions": [],
+              "arguments": [],
+              "logical_connectors": [
+                "if"
+              ],
+              "contradictions": [],
+              "fallacies": [],
+              "structure": "unstructured"
+            },
+            "problem_info": {
+              "type": "unknown",
+              "expected_structure": "unknown",
+              "constraints": [],
+              "context": {}
+            },
+            "verification_details": {
+              "structure_score": 0.0,
+              "consistency_score": 1.0,
+              "coherence_score": 0.0,
+              "fallacy_penalty": 0.0,
+              "fallacies_found": []
+            },
+            "execution_time": 2.9087066650390625e-05
+          }
+        },
+        {
+          "success": false,
+          "score": 0.21,
+          "details": {
+            "logic_content": {
+              "premises": [],
+              "conclusions": [],
+              "arguments": [],
+              "logical_connectors": [
+                "if"
+              ],
+              "contradictions": [
+                "def binary_search(arr, target):\n    left, right = 0, len(arr) - 1\n    while left <= right:\n        mid = (left + right) // 2\n        if arr[mid] == target:\n            return mid\n        elif arr[mid] < target:\n            left = mid + 1\n        else:\n            right = mid - 1\n    return -1"
+              ],
+              "fallacies": [],
+              "structure": "unstructured"
+            },
+            "problem_info": {
+              "type": "unknown",
+              "expected_structure": "unknown",
+              "constraints": [],
+              "context": {}
+            },
+            "verification_details": {
+              "structure_score": 0.0,
+              "consistency_score": 0.7,
+              "coherence_score": 0.0,
+              "fallacy_penalty": 0.0,
+              "fallacies_found": []
+            },
+            "execution_time": 5.507469177246094e-05
+          }
+        },
+        {
+          "success": false,
+          "score": 0.3,
+          "details": {
+            "logic_content": {
+              "premises": [],
+              "conclusions": [],
+              "arguments": [],
+              "logical_connectors": [],
+              "contradictions": [],
+              "fallacies": [],
+              "structure": "unstructured"
+            },
+            "problem_info": {
+              "type": "unknown",
+              "expected_structure": "unknown",
+              "constraints": [],
+              "context": {}
+            },
+            "verification_details": {
+              "structure_score": 0.0,
+              "consistency_score": 1.0,
+              "coherence_score": 0.0,
+              "fallacy_penalty": 0.0,
+              "fallacies_found": []
+            },
+            "execution_time": 2.3126602172851562e-05
+          }
+        },
+        {
+          "success": false,
+          "score": 0.3,
+          "details": {
+            "logic_content": {
+              "premises": [],
+              "conclusions": [],
+              "arguments": [],
+              "logical_connectors": [
+                "if"
+              ],
+              "contradictions": [],
+              "fallacies": [],
+              "structure": "unstructured"
+            },
+            "problem_info": {
+              "type": "unknown",
+              "expected_structure": "unknown",
+              "constraints": [],
+              "context": {}
+            },
+            "verification_details": {
+              "structure_score": 0.0,
+              "consistency_score": 1.0,
+              "coherence_score": 0.0,
+              "fallacy_penalty": 0.0,
+              "fallacies_found": []
+            },
+            "execution_time": 2.9087066650390625e-05
+          }
+        },
+        {
+          "success": false,
+          "score": 0.3,
+          "details": {
+            "logic_content": {
+              "premises": [],
+              "conclusions": [],
+              "arguments": [],
+              "logical_connectors": [
+                "if"
+              ],
+              "contradictions": [],
+              "fallacies": [],
+              "structure": "unstructured"
+            },
+            "problem_info": {
+              "type": "unknown",
+              "expected_structure": "unknown",
+              "constraints": [],
+              "context": {}
+            },
+            "verification_details": {
+              "structure_score": 0.0,
+              "consistency_score": 1.0,
+              "coherence_score": 0.0,
+              "fallacy_penalty": 0.0,
+              "fallacies_found": []
+            },
+            "execution_time": 2.9087066650390625e-05
+          }
+        },
+        {
+          "success": false,
+          "score": 0.21,
+          "details": {
+            "logic_content": {
+              "premises": [],
+              "conclusions": [],
+              "arguments": [],
+              "logical_connectors": [
+                "if"
+              ],
+              "contradictions": [
+                "def binary_search(arr, target):\n    left, right = 0, len(arr) - 1\n    while left <= right:\n        mid = (left + right) // 2\n        if arr[mid] == target:\n            return mid\n        elif arr[mid] < target:\n            left = mid + 1\n        else:\n            right = mid - 1\n    return -1"
+              ],
+              "fallacies": [],
+              "structure": "unstructured"
+            },
+            "problem_info": {
+              "type": "unknown",
+              "expected_structure": "unknown",
+              "constraints": [],
+              "context": {}
+            },
+            "verification_details": {
+              "structure_score": 0.0,
+              "consistency_score": 0.7,
+              "coherence_score": 0.0,
+              "fallacy_penalty": 0.0,
+              "fallacies_found": []
+            },
+            "execution_time": 5.507469177246094e-05
+          }
+        },
+        {
+          "success": false,
+          "score": 0.3,
+          "details": {
+            "logic_content": {
+              "premises": [],
+              "conclusions": [],
+              "arguments": [],
+              "logical_connectors": [],
+              "contradictions": [],
+              "fallacies": [],
+              "structure": "unstructured"
+            },
+            "problem_info": {
+              "type": "unknown",
+              "expected_structure": "unknown",
+              "constraints": [],
+              "context": {}
+            },
+            "verification_details": {
+              "structure_score": 0.0,
+              "consistency_score": 1.0,
+              "coherence_score": 0.0,
+              "fallacy_penalty": 0.0,
+              "fallacies_found": []
+            },
+            "execution_time": 3.814697265625e-05
+          }
+        },
+        {
+          "success": false,
+          "score": 0.3,
+          "details": {
+            "logic_content": {
+              "premises": [],
+              "conclusions": [],
+              "arguments": [],
+              "logical_connectors": [
+                "if"
+              ],
+              "contradictions": [],
+              "fallacies": [],
+              "structure": "unstructured"
+            },
+            "problem_info": {
+              "type": "unknown",
+              "expected_structure": "unknown",
+              "constraints": [],
+              "context": {}
+            },
+            "verification_details": {
+              "structure_score": 0.0,
+              "consistency_score": 1.0,
+              "coherence_score": 0.0,
+              "fallacy_penalty": 0.0,
+              "fallacies_found": []
+            },
+            "execution_time": 2.9802322387695312e-05
+          }
+        },
+        {
+          "success": false,
+          "score": 0.61,
+          "details": {
+            "logic_content": {
+              "premises": [],
+              "conclusions": [
+                "No, we cannot conclude that some roses are red"
+              ],
+              "arguments": [],
+              "logical_connectors": [
+                "so"
+              ],
+              "contradictions": [],
+              "fallacies": [],
+              "structure": "assertion"
+            },
+            "problem_info": {
+              "type": "unknown",
+              "expected_structure": "unknown",
+              "constraints": [],
+              "context": {}
+            },
+            "verification_details": {
+              "structure_score": 0.5,
+              "consistency_score": 1.0,
+              "coherence_score": 0.8,
+              "fallacy_penalty": 0.0,
+              "fallacies_found": []
+            },
+            "execution_time": 0.0001590251922607422
+          }
+        }
+      ]
+    }
+  },
+  "data_preparation": {
+    "dataset_size": 200
+  },
+  "training": {
+    "total_episodes": 100,
+    "best_reward": 0.08358333333333329,
+    "final_reward_mean": -0.06451916666666667,
+    "final_reward_std": 0.05079277604825583,
+    "final_verification_accuracy": 0.0,
+    "training_time": 0.29311084747314453
+  },
+  "evaluation": {
+    "training_summary": {
+      "total_episodes": 100,
+      "best_reward": 0.08358333333333329,
+      "final_reward_mean": -0.06451916666666667,
+      "final_reward_std": 0.05079277604825583,
+      "final_verification_accuracy": 0.0,
+      "training_time": 0.29311084747314453
+    },
+    "performance_metrics": {
+      "total_episodes": 100,
+      "best_reward": 0.08358333333333329,
+      "final_reward_mean": -0.06451916666666667,
+      "final_verification_accuracy": 0.0,
+      "training_time": 0.29311084747314453
+    }
+  }
+}

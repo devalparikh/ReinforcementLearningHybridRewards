@@ -17,6 +17,7 @@ import os
 import json
 import time
 import random
+import logging
 from typing import List, Dict, Any
 from dataclasses import dataclass
 import numpy as np
@@ -26,19 +27,32 @@ from pathlib import Path
 # Add src to path
 sys.path.append('src')
 
+# Import only the essential modules to avoid dependency issues
 from src.config.training_config import TrainingConfig, get_fast_config
-from src.data.dataset import RLVRDataset
 from src.data.preprocessing import DataPreprocessor
-from src.models.language_model import LanguageModel
-from src.verifiers.code_verifier import CodeVerifier
-from src.verifiers.math_verifier import MathVerifier
-from src.verifiers.logic_verifier import LogicVerifier
-from src.rewards.hybrid_reward import HybridReward
-from src.rewards.reward_factory import RewardFactory
-from src.training.rlvr_trainer import RLVRTrainer
-from src.training.ppo_trainer import PPOTrainer
 from src.utils.logging import setup_logging
 from src.utils.metrics import MetricsTracker
+
+# Import verifiers and rewards only when needed
+def import_verifiers():
+    from src.verifiers.code_verifier import CodeVerifier
+    from src.verifiers.math_verifier import MathVerifier
+    from src.verifiers.logic_verifier import LogicVerifier
+    return CodeVerifier, MathVerifier, LogicVerifier
+
+def import_rewards():
+    from src.rewards.hybrid_reward import HybridReward
+    from src.rewards.reward_factory import RewardFactory
+    return HybridReward, RewardFactory
+
+def import_training():
+    from src.training.rlvr_trainer import RLVRTrainer
+    from src.training.ppo_trainer import PPOTrainer
+    return RLVRTrainer, PPOTrainer
+
+def import_dataset():
+    from src.data.dataset import RLVRDataset
+    return RLVRDataset
 
 
 @dataclass
@@ -56,7 +70,8 @@ class RLVRExample:
     
     def __init__(self, config: TrainingConfig = None):
         self.config = config or get_fast_config()
-        self.logger = setup_logging(log_level="INFO")
+        setup_logging(log_level="INFO")
+        self.logger = logging.getLogger(__name__)
         self.results_dir = Path("results")
         self.results_dir.mkdir(exist_ok=True)
         
@@ -242,6 +257,8 @@ class RLVRExample:
         """Initialize verification components."""
         self.logger.info("Initializing verifiers...")
         
+        CodeVerifier, MathVerifier, LogicVerifier = import_verifiers()
+        
         self.verifiers = [
             CodeVerifier(config={
                 "timeout": 30,
@@ -307,6 +324,8 @@ class RLVRExample:
         """Initialize the hybrid reward function."""
         self.logger.info("Initializing reward function...")
         
+        HybridReward, RewardFactory = import_rewards()
+        
         self.reward_function = HybridReward(config={
             "verification_weight": 0.7,
             "quality_weight": 0.2,
@@ -320,16 +339,11 @@ class RLVRExample:
         """Initialize the language model."""
         self.logger.info("Initializing language model...")
         
-        try:
-            self.language_model = LanguageModel(self.config.model)
-            self.logger.info(f"Initialized language model: {self.config.model.model_name}")
-        except Exception as e:
-            self.logger.warning(f"Could not initialize language model: {e}")
-            self.logger.info("Using mock language model for demonstration")
-            # Create a simple mock model for demonstration
-            self.language_model = MockLanguageModel(self.config.model)
+        # Always use mock model to avoid dependency issues
+        self.logger.info("Using mock language model for demonstration")
+        self.language_model = MockLanguageModel(self.config.model)
     
-    def prepare_training_data(self, data: List[TrainingExample]) -> RLVRDataset:
+    def prepare_training_data(self, data: List[TrainingExample]) -> List[Dict[str, Any]]:
         """Prepare data for training."""
         self.logger.info("Preparing training data...")
         
@@ -349,31 +363,16 @@ class RLVRExample:
         preprocessor = DataPreprocessor()
         processed_data = preprocessor.preprocess_dataset(data_dicts)
         
-        # Create dataset - save to temporary file first
-        import tempfile
-        import json
-        
-        with tempfile.NamedTemporaryFile(mode='w', suffix='.jsonl', delete=False) as f:
-            for item in processed_data:
-                f.write(json.dumps(item) + '\n')
-            temp_file = f.name
-        
-        # Create dataset
-        dataset = RLVRDataset(temp_file, self.logger)
-        
-        self.logger.info(f"Prepared {len(dataset)} training examples")
-        return dataset
+        self.logger.info(f"Prepared {len(processed_data)} training examples")
+        return processed_data
     
-    def train(self, dataset: RLVRDataset) -> Dict[str, Any]:
+    def train(self, train_data: List[Dict[str, Any]]) -> Dict[str, Any]:
         """Run the RLVR training process."""
         self.logger.info("Starting RLVR training...")
         
-        # Convert dataset to list format for training
-        train_data = []
-        for i in range(len(dataset)):
-            train_data.append(dataset[i])
-        
         # Initialize trainer
+        RLVRTrainer, PPOTrainer = import_training()
+        
         self.trainer = RLVRTrainer(
             config=self.config,
             language_model=self.language_model,
@@ -471,11 +470,33 @@ class MockLanguageModel:
     def __init__(self, config):
         self.config = config
         self.name = "mock_model"
-        self.model = None  # Mock model attribute
+        
+        # Create a mock model with parameters
+        class MockModel:
+            def __init__(self):
+                import torch
+                # Create a dummy parameter
+                self.dummy_param = torch.nn.Parameter(torch.randn(10, 10))
+                self.parameters = lambda: [self.dummy_param]
+                self.state_dict = lambda: {"dummy_param": self.dummy_param}
+                self.load_state_dict = lambda x: None
+                self.eval = lambda: None
+                self.to = lambda x: self
+        
+        self.model = MockModel()
     
     def generate(self, prompt: str, max_length: int = None, temperature: float = 1.0, return_logprobs: bool = False, **kwargs):
         """Generate a mock response."""
-        from src.models.language_model import GenerationOutput
+        from dataclasses import dataclass
+        
+        @dataclass
+        class MockGenerationOutput:
+            text: str
+            logprobs: list = None
+            tokens: list = None
+            scores: list = None
+            generation_time: float = 0.1
+            metadata: dict = None
         
         # Simple mock responses based on instruction type
         if "factorial" in prompt.lower():
@@ -487,7 +508,7 @@ class MockLanguageModel:
         else:
             text = "This is a mock response for demonstration purposes."
         
-        return GenerationOutput(
+        return MockGenerationOutput(
             text=text,
             logprobs=[0.1] * len(text.split()) if return_logprobs else None,
             tokens=text.split() if return_logprobs else None,
